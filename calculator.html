@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Css HtMl</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #calculator{
+        border: 1px solid;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        width: 25vw;
+        /* viewport height = full page height */
+        height: 50vh;
+        /* same as grid-gap */
+        gap: 5px;
+      }
+
+      .DisplayUnit {
+        background-color: black;
+        color: white;
+        font-size: 32px;
+        border-radius: 5px;
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 5px;
+      }
+      .equal {
+        /* grid-row: 3 / 7; */
+        /* grid-column: 4 / 5; */
+        grid-area: 3 / 4 / 7 / 5;
+        background: lightblue;
+        color: white;
+      }
+button:hover{
+  background-color: blue;
+}
+
+  </style>
+</head>
+<body>
+  <div id="calculator">
+  
+  <div class="DisplayUnit">
+    0
+  </div>
+    <button>+</button>
+    <button>-</button>
+    <button>*</button>
+    <button>#</button>
+    <button>/</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>.</button>
+    <button style="background: rgb(248, 4, 4);">AC</button>
+    <button class="equal">=</button>
+  </div>
+  
+</body>
+</html>
